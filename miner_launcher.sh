@@ -6,7 +6,7 @@ else
    DELAY=$1
 fi
 sleep $DELAY
-cd /home/dm
+cd /home/dm/mining_tools
 su dm -c "./overclock_gpus.sh"
 su dm -c "screen -dmS fans ./fan_control.py"
 su dm -c "./mine.sh"
